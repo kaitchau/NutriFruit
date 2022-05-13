@@ -2,11 +2,11 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <div class="container flex mx-auto">
-      <div class="flex border-2 rounded">
-        <button class="flex items-center justify-center px-4 border-r">
+    <div className="container flex mx-auto">
+      <div className="flex-none border-2 rounded w-2/3 my-8 ">
+        <button className="flex-none items-center justify-center px-4 border-r">
           <svg
-            class="w-6 h-6 text-gray-600"
+            className="w-6 h-6 text-gray-600"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -14,7 +14,7 @@ const SearchBar = () => {
             <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
           </svg>
         </button>
-        <input type="text" class="px-4 py-2 w-80" placeholder="Search..." />
+        <input type="text" className="px-4 py-2 w-80" placeholder="Search..." />
       </div>
     </div>
   );
