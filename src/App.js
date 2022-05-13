@@ -9,7 +9,7 @@ function App() {
       <FruitImage></FruitImage>
       <SearchBar></SearchBar>
       <NutritionText></NutritionText>
-      {/* {<FunFact></FunFact>} */}
+      <FunFact></FunFact>
     </div>
   );
 }
