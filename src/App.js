@@ -4,7 +4,6 @@ import NutritionText from "./NutritionText";
 import FunFact from "./FunFact";
 
 function App() {
-  const string = "";
   return (
     <div className="App">
       <FruitImage></FruitImage>
