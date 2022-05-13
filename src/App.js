@@ -1,11 +1,11 @@
 import FruitImage from "./FruitImage";
 import SearchBar from "./SearchBar";
-import NutritionText from "./NutritionText";
-import FunFact from "./FunFact";
 import SearchAgainButton from "./SearchAgainButton";
 import useFruitData from "./Hooks/useFruitData";
 import useFruitFunFact from "./Hooks/useFruitFunFacts";
 import useFruitImage from "./Hooks/useFruitImage";
+import NutritionText from "./NutritionText";
+import FunFact from "./FunFact";
 
 function App() {
   const fruit = "banana";
@@ -36,6 +36,8 @@ function App() {
     <div className="App">
       <FruitImage></FruitImage>
       <SearchBar></SearchBar>
+      {/* ...fruitData is passing on the data as props
+      through object spreading*/}
       <NutritionText></NutritionText>
       <FunFact></FunFact>
       <SearchAgainButton></SearchAgainButton>
