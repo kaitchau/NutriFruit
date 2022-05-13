@@ -2,12 +2,12 @@ import React from "react";
 
 const NutritionText = () => {
   return (
-    <div class="relative h-64 w-100 ...">
-      <div class="absolute inset-y-0 left-[250px] w-[500px] bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
+    <div className="relative h-64 w-100 ...">
+      <div className="absolute inset-y-0 left-[250px] w-[500px] bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+        <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
           Nutrition Facts
         </h3>
-        <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
           The nutrition facts includes...
         </p>
       </div>
