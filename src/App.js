@@ -22,6 +22,8 @@ function App() {
 
   if (fruitFact === undefined) {
     console.log(`No fruit fact for ${fruit}`);
+  } else {
+    console.log(fruitFact);
   }
 
   if (FruitImage === undefined) {
