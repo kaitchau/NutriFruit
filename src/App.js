@@ -1,15 +1,14 @@
 import FruitImage from "./FruitImage";
-//import SearchBar from "./SearchBar";
 import useFruitData from "./Hooks/useFruitData";
 import useFruitFunFact from "./Hooks/useFruitFunFacts";
 import useFruitImage from "./Hooks/useFruitImage";
 import NutritionText from "./NutritionText";
 import FunFact from "./FunFact";
 import { useRef, useState } from "react";
-import FruitData from "./Hooks/FruitData";
 import InvalidFruit from "./InvalidFruit";
 
 function App() {
+  //banana is the default fruit, defined below
   const [fruit, setFruit] = useState("banana");
   const fruitData = useFruitData(fruit);
   let fruitFact = useFruitFunFact(fruit);
@@ -29,8 +28,10 @@ function App() {
     console.log(`No fruit image for ${fruit}`);
   }
 
+  // constant inputEl references the search input
   const inputEl = useRef();
 
+  //set the current fruit to the current value of inputEl from the search bar
   const onButtonClick = () => {
     setFruit(inputEl.current.value);
   };
