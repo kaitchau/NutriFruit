@@ -7,7 +7,7 @@ const FruitImage = ({ img }) => {
         className="object-center"
         src={img}
         alt="Fruit"
-        height="400"
+        height="300"
         width="400"
       />
     </div>
