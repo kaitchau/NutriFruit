@@ -1,13 +1,11 @@
 import React from "react";
 
-const NutritionText = (prop) => {
-  //data is a property of prop
-  // const name = prop.name;
-  // const cals = prop.nutritions.calories;
-  // const carbs = prop.nutritions.carbohydrates;
-  // const fats = prop.nutritions.fat;
-  // const proteins = prop.nutritions.protein;
-  // const sugars = prop.nutritions.sugar;
+const NutritionText = ({ name, nutritions }) => {
+  let cals = nutritions.calories;
+  let carbs = nutritions.carbohydrates;
+  let fats = nutritions.fat;
+  let proteins = nutritions.protein;
+  let sugars = nutritions.sugar;
 
   return (
     <div className="relative h-64 w-100 ...">
@@ -15,7 +13,7 @@ const NutritionText = (prop) => {
         <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
           Nutrition Facts
         </h3>
-        {/* <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
           Name: {name}
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
@@ -29,7 +27,10 @@ const NutritionText = (prop) => {
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
           Sugar: {sugars}
-        </p> */}
+        </p>
+        <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+          Calories: {cals}
+        </p>
       </div>
     </div>
   );
