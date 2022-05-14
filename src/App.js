@@ -60,13 +60,13 @@ function App() {
           />
         </div>
       </div>
-      <InvalidFruit></InvalidFruit>
-      {/* {fruitData === undefined ? (
+      {/* <InvalidFruit></InvalidFruit> */}
+      {fruitData === undefined ? (
         "Nothing"
       ) : (
         <NutritionText {...fruitData}></NutritionText>
-      )} */}
-      {/* <FunFact></FunFact> */}
+      )}
+      <FunFact></FunFact>
     </div>
   );
 }
