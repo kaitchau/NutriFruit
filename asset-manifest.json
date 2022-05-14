@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/NutriFruit/static/css/main.0b545949.css",
-    "main.js": "/NutriFruit/static/js/main.8547fcb8.js",
+    "main.js": "/NutriFruit/static/js/main.9ec83e98.js",
     "index.html": "/NutriFruit/index.html",
     "main.0b545949.css.map": "/NutriFruit/static/css/main.0b545949.css.map",
-    "main.8547fcb8.js.map": "/NutriFruit/static/js/main.8547fcb8.js.map"
+    "main.9ec83e98.js.map": "/NutriFruit/static/js/main.9ec83e98.js.map"
   },
   "entrypoints": [
     "static/css/main.0b545949.css",
-    "static/js/main.8547fcb8.js"
+    "static/js/main.9ec83e98.js"
   ]
 }
