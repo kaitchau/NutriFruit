@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nutrifruit/static/css/main.0b545949.css",
+    "main.js": "/nutrifruit/static/js/main.8547fcb8.js",
+    "index.html": "/nutrifruit/index.html",
+    "main.0b545949.css.map": "/nutrifruit/static/css/main.0b545949.css.map",
+    "main.8547fcb8.js.map": "/nutrifruit/static/js/main.8547fcb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b545949.css",
+    "static/js/main.8547fcb8.js"
+  ]
+}
