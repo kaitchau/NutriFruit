@@ -17,19 +17,19 @@ const NutritionText = ({ name, nutritions }) => {
           Name: {name}
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-          Carb: {carbs}
+          Carb: {carbs}g
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-          Fat: {fats}
+          Fat: {fats}g
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-          Protein: {proteins}
+          Protein: {proteins}g
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-          Sugar: {sugars}
+          Sugar: {sugars}g
         </p>
         <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-          Calories: {cals}
+          Calories: {cals}kcal
         </p>
       </div>
     </div>
