@@ -33,7 +33,6 @@ function App() {
   const onButtonClick = () => {
     setFruit(inputEl.current.value);
   };
-  console.log(fruitData);
   return (
     <div className="App">
       <FruitImage></FruitImage>
@@ -61,7 +60,11 @@ function App() {
           />
         </div>
       </div>
-      <NutritionText {...fruitData}></NutritionText>
+      {fruitData === undefined ? (
+        "Nothing"
+      ) : (
+        <NutritionText {...fruitData}></NutritionText>
+      )}
       <FunFact></FunFact>
       <SearchAgainButton></SearchAgainButton>
     </div>
