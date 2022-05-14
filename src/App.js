@@ -1,6 +1,5 @@
 import FruitImage from "./FruitImage";
 //import SearchBar from "./SearchBar";
-import SearchAgainButton from "./SearchAgainButton";
 import useFruitData from "./Hooks/useFruitData";
 import useFruitFunFact from "./Hooks/useFruitFunFacts";
 import useFruitImage from "./Hooks/useFruitImage";
@@ -8,6 +7,7 @@ import NutritionText from "./NutritionText";
 import FunFact from "./FunFact";
 import { useRef, useState } from "react";
 import FruitData from "./Hooks/FruitData";
+import InvalidFruit from "./InvalidFruit";
 
 function App() {
   const [fruit, setFruit] = useState("banana");
@@ -57,18 +57,18 @@ function App() {
           <input
             ref={inputEl}
             type="text"
-            className="px-4 py-2 w-1/2"
+            className="px-4 py-2 w-1/2 outline outline-[#cecace]"
             placeholder="Search..."
           />
         </div>
       </div>
-      {fruitData === undefined ? (
+      <InvalidFruit></InvalidFruit>
+      {/* {fruitData === undefined ? (
         "Nothing"
       ) : (
         <NutritionText {...fruitData}></NutritionText>
-      )}
-      <FunFact></FunFact>
-      <SearchAgainButton></SearchAgainButton>
+      )} */}
+      {/* <FunFact></FunFact> */}
     </div>
   );
 }
