@@ -12,7 +12,7 @@ import InvalidFruit from "./InvalidFruit";
 function App() {
   const [fruit, setFruit] = useState("banana");
   const fruitData = useFruitData(fruit);
-  const fruitFact = useFruitFunFact(fruit);
+  let fruitFact = useFruitFunFact(fruit);
   const fruitImage = useFruitImage(fruit);
 
   // Invalid fruit if undefined
@@ -22,8 +22,7 @@ function App() {
 
   if (fruitFact === undefined) {
     console.log(`No fruit fact for ${fruit}`);
-  } else {
-    console.log(fruitFact);
+    fruitFact = "There are no facts available for this fruit";
   }
 
   if (FruitImage === undefined) {
@@ -37,7 +36,11 @@ function App() {
   };
   return (
     <div className="App">
-      <FruitImage></FruitImage>
+      {fruitImage === undefined ? (
+        <p className="text-center mt-5"> "No Image" </p>
+      ) : (
+        <FruitImage img={fruitImage}></FruitImage>
+      )}
 
       {/* search functionality */}
       <div className="container flex mx-auto">
@@ -62,13 +65,12 @@ function App() {
           />
         </div>
       </div>
-      {/* <InvalidFruit></InvalidFruit> */}
       {fruitData === undefined ? (
-        "Nothing"
+        <InvalidFruit></InvalidFruit>
       ) : (
         <NutritionText {...fruitData}></NutritionText>
       )}
-      <FunFact></FunFact>
+      {fruitData === undefined ? "" : <FunFact facts={fruitFact}></FunFact>}
     </div>
   );
 }

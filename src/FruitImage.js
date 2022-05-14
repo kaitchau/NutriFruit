@@ -1,11 +1,15 @@
 import React from "react";
 
-const FruitImage = () => {
+const FruitImage = ({ img }) => {
   return (
-    <div className="block">
-      <p className="text-3xl font-bold underline">DD </p>
-      {/*<img className="object-center src="..." ">
-  </img> */}
+    <div className="flex items-center justify-center mt-5">
+      <img
+        className="object-center"
+        src={img}
+        alt="Fruit"
+        height="400"
+        width="400"
+      />
     </div>
   );
 };
