@@ -16,7 +16,7 @@ const FunFact = ({ facts }) => {
 
   return (
     <div className="relative h-64 w-100 ...">
-      <div className="absolute top-[-255px] right-[250px] h-64 overflow-auto w-[500px] bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+      <div className="absolute top-[-280px] right-[250px] h-64 overflow-auto w-1/3 bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
         {/* <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">
           Fun Facts
         </h3>*/}
