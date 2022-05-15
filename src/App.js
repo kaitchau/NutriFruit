@@ -4,7 +4,7 @@ import useFruitFunFact from "./Hooks/useFruitFunFacts";
 import useFruitImage from "./Hooks/useFruitImage";
 import NutritionText from "./NutritionText";
 import FunFact from "./FunFact";
-import { useRef, useState } from "react";
+import { useRef, useState, Fragment } from "react";
 import InvalidFruit from "./InvalidFruit";
 
 function App() {
@@ -69,9 +69,11 @@ function App() {
       {fruitData === undefined ? (
         <InvalidFruit></InvalidFruit>
       ) : (
-        <NutritionText {...fruitData}></NutritionText>
+        <Fragment>
+          <NutritionText {...fruitData}></NutritionText>,
+          <FunFact facts={fruitFact}></FunFact>,
+        </Fragment>
       )}
-      {fruitData === undefined ? "" : <FunFact facts={fruitFact}></FunFact>}
     </div>
   );
 }
