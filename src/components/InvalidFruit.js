@@ -1,5 +1,5 @@
 import React from "react";
-import ValidFruits from "./Hooks/ValidFruits";
+import ValidFruits from "../Hooks/ValidFruits";
 
 const NutritionText = () => {
   const listItems = ValidFruits.map((fruit) => (
