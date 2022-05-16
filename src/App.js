@@ -66,6 +66,9 @@ function App() {
           />
         </div>
       </div>
+      {/*Instead of using an array or div to render multiple children components,
+      used React Fragment b/c doesn't add extra nodes to DOM (Document Object Model)
+      */}
       {fruitData === undefined ? (
         <InvalidFruit></InvalidFruit>
       ) : (
