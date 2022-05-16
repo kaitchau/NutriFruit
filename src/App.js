@@ -24,7 +24,7 @@ function App() {
     fruitFact = "There are no facts available for this fruit";
   }
 
-  if (FruitImage === undefined) {
+  if (fruitImage === undefined) {
     console.log(`No fruit image for ${fruit}`);
   }
 
