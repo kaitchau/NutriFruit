@@ -1,11 +1,11 @@
-import FruitImage from "./FruitImage";
 import useFruitData from "./Hooks/useFruitData";
 import useFruitFunFact from "./Hooks/useFruitFunFacts";
 import useFruitImage from "./Hooks/useFruitImage";
-import NutritionText from "./NutritionText";
-import FunFact from "./FunFact";
+import FruitImage from "./components/FruitImage";
+import NutritionText from "./components/NutritionText";
+import FunFact from "./components/FunFact";
+import InvalidFruit from "./components/InvalidFruit";
 import { useRef, useState, Fragment } from "react";
-import InvalidFruit from "./InvalidFruit";
 
 function App() {
   //banana is the default fruit, defined below
