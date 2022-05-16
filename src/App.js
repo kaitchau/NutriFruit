@@ -19,11 +19,14 @@ function App() {
     console.log(`No fruit data for ${fruit}`);
   }
 
+  // Valid fruit but no fruit facts in data set
+  // gives the fruitFact state a "fact"
   if (fruitFact === undefined) {
     console.log(`No fruit fact for ${fruit}`);
     fruitFact = "There are no facts available for this fruit";
   }
 
+  // Valid fruit but no image in data set
   if (FruitImage === undefined) {
     console.log(`No fruit image for ${fruit}`);
   }
@@ -55,6 +58,7 @@ function App() {
               fill="currentColor"
               viewBox="0 0 24 24"
             >
+              {/* below is the search button image */}
               <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
             </svg>
           </button>
@@ -73,6 +77,8 @@ function App() {
         <InvalidFruit></InvalidFruit>
       ) : (
         <Fragment>
+          {/* Spreading the fruitData so that they values are separated for use
+          instead of a whole object */}
           <NutritionText {...fruitData}></NutritionText>,
           <FunFact facts={fruitFact}></FunFact>,
         </Fragment>
