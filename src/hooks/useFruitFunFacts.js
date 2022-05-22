@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import FruitFunFacts from "./FruitFunFacts";
+import FruitFunFacts from "./_FruitFunFacts";
 
 const useFruitFunFacts = (fruitName) => {
   fruitName = fruitName.toLowerCase();

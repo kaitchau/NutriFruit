@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import FruitImages from "./FruitImages";
+import FruitImages from "./_FruitImages";
 
 function toTitleCase(str) {
   return str
