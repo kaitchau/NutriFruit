@@ -12,12 +12,15 @@ function toTitleCase(str) {
 }
 
 const useFruitImage = (fruitName) => {
+  // to ensure case insensitivity
   fruitName = toTitleCase(fruitName);
 
   const [data, setData] = useState();
 
+  // with key being the fruit name, the value is the url of the image
   const found = FruitImages[fruitName];
 
+  // set data to found whenever found changes
   useEffect(() => {
     setData(found);
   }, [found]);
