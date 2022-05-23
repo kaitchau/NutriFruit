@@ -1,3 +1,5 @@
+// source: https://github.com/tamalweb/fruit-facts
+
 const FruitFunFacts = {
   apple: [
     "The average person eats 65 apples per year",
